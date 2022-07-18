@@ -1,6 +1,6 @@
 class Carta
     attr_accessor :numero, :pinta
-    def initialize(numero,pinta)
+    def initialize(numero,pinta) #contructor
         @numero = numero
         @pinta = pinta
     end
@@ -16,5 +16,6 @@ n.times do |c|
     nu = cartan.numero.to_s
     car = cartan.pinta
     cartas.push(nu + car)
+    #cartas.push(cartan) 
 end
 print cartas
