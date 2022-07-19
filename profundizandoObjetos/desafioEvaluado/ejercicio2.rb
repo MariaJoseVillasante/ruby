@@ -50,72 +50,48 @@ class Insecto < Animal
 end
 # Crear las clases Pingüino, Paloma y Pato. Las tres heredan de Ave. (1 Punto)
 class Pinguino < Ave
-    include Habilidades
-    include Caminante
-    include Nadador
-    include Alimentacion
-    include Carnivoro
-    include Herbivoro
+    include Habilidades::Caminante
+    include Habilidades::Nadador
+    include Alimentacion::Carnivoro
+    include Alimentacion::Herbivoro
 end
 class Paloma < Ave
-    include Habilidades
-    include Alimentacion
-    include Volador
-    include Caminante
-    include Carnivoro
-    include Herbivoro
+    include Habilidades::Volador
+    include Habilidades::Caminante
+    include Alimentacion::Herbivoro
 end
 class Pato < Ave
-    include Habilidades
-    include Alimentacion
-    include Volador
-    include Caminante
-    include Carnivoro
-    include Herbivoro
+    include Habilidades::Volador
+    include Habilidades::Caminante
+    include Alimentacion::Herbivoro
 end
 # Crear las clases Perro, Gato y Vaca. Las tres heredan de Mamífero. (1 Punto)
 class Perro < Mamifero
-    include Habilidades
-    include Alimentacion
-    include Nadador
-    include Caminante
-    include Carnivoro
+    include Habilidades::Caminante
+    include Habilidades::Nadador
+    include Alimentacion::Carnivoro
 end
 class Gato < Mamifero
-    include Habilidades
-    include Alimentacion
-    include Caminante
-    include Carnivoro
+    include Habilidades::Caminante
+    include Habilidades::Nadador
+    include Alimentacion::Carnivoro
 end
 class Vaca < Mamifero
-    include Habilidades
-    include Alimentacion
-    include Caminante
-    include Herbivoro
+    include Habilidades::Caminante
+    include Alimentacion::Herbivoro
 end
 # Crear las clases Mosca, Mariposa y Abeja. Las tres heredan de Insecto. (1 Punto)
 class Mosca < Insecto
-    include Habilidades
-    include Alimentacion
-    include Volador
-    include Caminante
-    include Carnivoro
-    include Herbivoro
+    include Habilidades::Volador
+    include Alimentacion::Carnivoro
 end
 class Mariposa < Insecto
-    include Habilidades
-    include Alimentacion
-    include Volador
-    include Caminante
-    include Herbivoro
+    include Habilidades::Volador
+    include Alimentacion::Herbivoro
 end
 class Abeja < Insecto
-    include Habilidades
-    include Alimentacion
-    include Volador
-    include Caminante
-    include Carnivoro
-    include Herbivoro
+    include Habilidades::Volador
+    include Alimentacion::Herbivoro
 end
 
 mar = Mariposa.new('mariposa1')
