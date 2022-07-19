@@ -1,10 +1,9 @@
 class Person
-   # attr_reader :first, :last
-    def initialize(first, last, age, type)
-        @first = first
-        @last = last
+   attr_accessor :first, :last
+    def initialize(first, last, age)
+        @first_name = first
+        @last_name = last
         @age = age
-        @type = type
     end
     def birthday 
         @age += 1
@@ -13,6 +12,6 @@ class Person
         " la clase de programación con Ruby"   
     end
     def introduce
-        ". Mi nombre es #{first} #{last}."
+        ". Mi nombre es #{@first_name} #{@last_name}."
     end 
 end
