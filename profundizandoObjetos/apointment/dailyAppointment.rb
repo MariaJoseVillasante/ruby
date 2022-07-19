@@ -1,5 +1,5 @@
 class DailyAppointment < Appointment
-    def occurs_on?(hour,min)
+    def occurs_on?(hour, min)
         hour == @hour && min == @min
     end
     def to_s

@@ -1,7 +1,7 @@
 class MonthlyAppointment < Appointment
     attr_reader :day
-    def initialize(location,purpose,hour,min,day)
-        super(location,purpose,hour,min)
+    def initialize(location, purpose, hour, min, day)
+        super(location, purpose, hour, min)
         @day=day
     end
     def occurs_on?(day)
