@@ -6,6 +6,6 @@ class Teacher < Person
         "Bienvenidos a" + super + "!" 
     end
     def introduce
-        super + " alumnos. Mi nombre es #{@first_name} #{@last_name}." 
+        "Hola alumnos" + super 
     end 
 end

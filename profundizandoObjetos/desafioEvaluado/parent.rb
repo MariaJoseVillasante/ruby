@@ -6,6 +6,6 @@ class Parent < Person
         "Aquí es la reunión de apoderados?" 
     end
     def introduce
-        super + "Soy uno de los apoderados. Mi nombre es #{@first_name} #{@last_name}."
+        "Hola. Soy uno de los apoderados" + super #. Mi nombre es #{@first_name} #{@last_name}."
     end 
 end

@@ -5,7 +5,7 @@ class Student < Person
     def talk
         "Aquí es" + super + "?" 
     end
-    def introduce(n)
-        super(1) + " profesor" + super(2) #. Mi nombre es #{@first_name} #{@last_name}." 
+    def introduce
+        "Hola profesor" + super #. Mi nombre es #{@first_name} #{@last_name}." 
     end 
 end
