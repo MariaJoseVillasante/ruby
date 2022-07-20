@@ -5,6 +5,7 @@ class Usuario
         @cuentas=cuentas
     end
     def saldo_total
+        #@cuentas.map{|cuenta| cuenta.saldo}.sum 
         @balance_total = 0
         @cuentas.each do |cuenta|
             @balance_total += cuenta.saldo
