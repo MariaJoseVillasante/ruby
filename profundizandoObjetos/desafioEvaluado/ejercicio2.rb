@@ -95,6 +95,7 @@ class Abeja < Insecto
 end
 
 mar = Mariposa.new('mariposa1')
+Mariposa.new('mariposa1').volar
 puts mar.volar
 puts mar.aterrizar
 cat = Gato.new('cat')
